@@ -1,0 +1,21 @@
+  
+@import"./variables";
+
+
+@mixin mobile {
+    @media (min-width: $mobile) and (max-width:767px){
+        @content
+    } 
+};
+
+@mixin tablet {
+    @media (min-width: $tablet) and(max-width:1199px){
+        @content
+    } 
+};
+
+@mixin desktop {
+    @media(min-width: $desktop) and(max-width:2400px){
+        @content
+    } 
+};
