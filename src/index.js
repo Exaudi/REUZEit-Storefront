@@ -4,6 +4,7 @@ import { BrowserRouter, Routes,Route } from 'react-router-dom';
 //import './index.css';
 import App from './App.js';
 import Shop from './components/Shop/shop.jsx';
+import Cart from './components/cart'
 //import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
 
@@ -15,6 +16,7 @@ root.render(
     <Routes>  
         <Route path="/" element={<App />} />
         <Route path="Shop" element={<Shop />} />
+        <Route path="cart" element={<Cart />} />
     </Routes>
   </BrowserRouter>   
     

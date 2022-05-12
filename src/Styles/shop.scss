@@ -1,0 +1,48 @@
+@import"./mixins";
+
+
+*{
+    @font-face {
+        font-family:Nunito sans-serif ;
+        src: './fonts.scss';
+    };
+
+}
+.body{
+    align-self: center;
+    background-color: black;
+    margin:0;
+}
+
+.shop{
+    
+    &__title{
+        text-align: center;
+        padding:3% 0 0 0;
+      
+    }
+    &__title2{
+        text-align: center;
+        //color: aquamarine;
+    }    
+  
+}
+
+.card{
+    &__container{
+       display: flex; 
+    }
+    &__table{
+        flex-grow: 1;
+        display: inline-flex; 
+        justify-content: space-between;
+        list-style-type: none;
+        padding: 5% 2%; 
+        &--item{
+            padding:4rem;
+            outline: 1px solid #000;
+            border-radius: 10%;   
+        } 
+    }  
+}
+

@@ -1,16 +1,56 @@
 @import "./mixins";
+
+*{
+    margin: 0;
+}
+
 .nav{
-    display: inline-flex;
+    display: flex;
+    justify-content: space-between; 
+    background-color: #94D5D8;
+    width: 100%;
+    padding: 1rem;
+    align-self: center;
 
-&__container{
-    padding-top: .5%;
-    width:auto;
-    height: auto;
-    .logo{
-        max-width: 3px;
-        max-height:5px;
-    
+    &__logo{
+        align-self: center;
+        
     }
+    &__searchBar{
+        padding: 0 .25rem;
+        align-self: center;
+    }
+    &__links{
+        justify-content: space-between;
+        padding: 0 2rem;
+    }
+    &__buttons{
+        padding-left: 5%;
+        padding: 5px 10px;
+        margin: 5px;
+        justify-content: space-between; 
+        border:none;color: inherit; background:none;
+       
+    }
+    &__cartIcon{
+        width:100%;
+        align-self: center;
+        height: 26px;
+    }
+ 
+  
+}
+
+.hero{
+    width:100%;
+    height: 2rem;
 
 }
-}
+
+
+
+    
+
+
+
+
