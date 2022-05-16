@@ -1,8 +1,12 @@
 //import React, {Component} from 'react';
+import React, {useState, useEffect} from "react";
 import Nav from '../navBar/navbar'
+import LoadMore from "./loadMore";
 import '../../Styles/shop.scss'
 
 export default function shop(){
+
+
     return(
         
         <body>
@@ -15,19 +19,35 @@ export default function shop(){
                     <div className='card__table--item'>
                         <li>Analytical</li>
                     </div>
-                    <li className='card__table--item'>Mass Specs</li>
-                    <li className='card__table--item'>HPLC’s</li>
-                    <li className='card__table--item'>Cold Storage</li>
-                    <li className='card__table--item'>Molecular Biology</li>
+                    <div className='card__table--item'>
+                        <li>Mass Specs</li>
+                    </div>
+                    <div className='card__table--item'>
+                        <li>HPLC's</li>
+                    </div>
+                    <div className='card__table--item'>
+                        <li>Cold Storage</li>
+                    </div>
+                    <div className='card__table--item'>
+                        <li>Molecular Biology</li>
+                    </div>
                 </ul>
             </div>
                
             </div>
 
             <h2 className='shop__title2'>All Catergories</h2>
+            <div className='showMore'>
+                <LoadMore />
+            
+      
+
+            </div>
             
             </div>
-           
         </body>
     );
-}
+    };
+
+
+

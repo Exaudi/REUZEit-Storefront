@@ -3,6 +3,8 @@ import "../../Styles/navbar.scss";
 import logo from '../..//Assets/Logos/REUZEit Marketing Branding Logos and Icons for use/REUZEit No Tagline ® Official High res.png';
 import cartIcon from '../../Assets/icons/cart.png';
 import {Link} from 'react-router-dom'
+import hamMenu from '../../Assets/icons/icons8-menu-50.png'
+
 //import {Link} from "react-router-dom";
 
 class navbar extends Component{
@@ -10,7 +12,7 @@ class navbar extends Component{
 
         return (
            
-                <div className='nav'>
+                <nav className='nav'>
  
                 
                     <div className='nav__logo'>
@@ -30,10 +32,15 @@ class navbar extends Component{
                             <Link to="/cart"><button className='nav__buttons'><img src={cartIcon} className="nav__cartIcon" alt="cart"/></button></Link>
         
                     </div>
+                    <div className='hiddenNav'>
+                    <div className="hiddenNav__container">
+                        <button><img src={hamMenu} alt="menuHidden"/></button>
+                    </div>
+                </div>
                    
                 
                     
-                </div>
+                </nav>
             
         );
     }

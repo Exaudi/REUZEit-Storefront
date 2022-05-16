@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1611fc36.css",
+    "main.js": "/static/js/main.80f198fc.js",
+    "static/media/REUZEit No Tagline ® Official High res.png": "/static/media/REUZEit No Tagline ® Official High res.2b9b665254b7d60c1714.png",
+    "index.html": "/index.html",
+    "main.1611fc36.css.map": "/static/css/main.1611fc36.css.map",
+    "main.80f198fc.js.map": "/static/js/main.80f198fc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1611fc36.css",
+    "static/js/main.80f198fc.js"
+  ]
+}

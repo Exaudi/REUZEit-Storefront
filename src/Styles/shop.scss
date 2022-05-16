@@ -31,18 +31,35 @@
 .card{
     &__container{
        display: flex; 
+       flex-wrap: wrap;
     }
     &__table{
         flex-grow: 1;
         display: inline-flex; 
         justify-content: space-between;
         list-style-type: none;
-        padding: 5% 2%; 
+        width: 16%;
+        padding: 5% 2%;
+        @include mobile{
+            flex-direction: column;
+
+        } 
         &--item{
-            padding:4rem;
+            padding:4em;
+            margin:1em;
+            text-align: center;
+            order:5;
             outline: 1px solid #000;
-            border-radius: 10%;   
+            border-radius: 10%; 
+            @include mobile{
+                flex-direction: column;
+    
+            } 
+          
         } 
     }  
 }
+
+
+
 
