@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
-import '../../Styles/shop.scss';
+//import '../../Styles/shop.scss';
+import '../../Styles/showMore.scss'
    
 
 const LoadMore = () => {
@@ -18,29 +19,34 @@ const LoadMore = () => {
     }, []);
 
     return(
-        <div className='card'>
-        <div className='card__container'>
+        <body>
+        <div className='card2'>
+        <div className='card2__container'>
             {items.slice(0, visible).map((item) => (
-                <div className="card__table">
-                    <div className="card__table--item">
+                <div className="card2__table">
+                    <div className="card2__table--item">
                         <span>{item.id}</span> 
-                    
-                    <p>{item.body} </p>
                     </div>
+                    <div className="card2__table--item2">
+                        <p>{item.body} </p>
+                    </div>   
                 </div>
 
             ))}
+           
+        </div>
+        </div>
+        <div className='showMore'>
             <div className='showMore__container'>
-            <div className='showMore__heading'>
-                <button onClick={showMoreItems}><h5>Show More</h5></button>
+                <div className="showMore__heading">
+                    <button onClick={showMoreItems}><h5>Show More</h5></button>
+                </div>    
             </div>
-      
-    </div>
-       
-    </div>
+        </div>    
 
-
-    </div>
+    </body>
+    
+    
     )
 };
 export default LoadMore;

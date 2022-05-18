@@ -1,0 +1,53 @@
+@import"./mixins";
+
+.body{
+    align-self: center;
+    margin:0;
+}
+
+
+.card2{
+   
+    &__container{ 
+        display: flex;
+        flex-wrap: wrap;
+       @include mobile{
+           flex-direction: column;
+           align-self: center;
+           margin:0px;
+       }
+    }
+    &__table{
+        flex-grow: 1;
+        display: inline-flex;
+        justify-content: space-between;
+        list-style-type: none;
+        width: 16%;
+        padding: 5% 2%;
+        @include mobile{
+            //flex-direction: column;
+            align-self: center;
+
+        } 
+        &--item{
+            padding:4rem;
+            margin:1rem;
+            text-align: center;
+            order:5;
+            outline: 1px solid #000;
+            border-radius: 10%; 
+            @include mobile{
+                flex-direction: column;
+    
+            } 
+          
+        } 
+        &--item2{
+            display: none;
+        }
+    }  
+}
+
+.p{
+    margin: 0%;
+}

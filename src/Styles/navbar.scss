@@ -1,7 +1,8 @@
 @import "./mixins";
 
 *{
-    margin: 0;
+    margin: 0rem;
+    font-size: .9rem;
 }
 
 .nav{
@@ -11,23 +12,29 @@
     width: 100%;
     padding: 1rem;
     align-self: center;
-   
-
+    &__containerR{
+        display: flex;
+    }
     &__logo{
-        align-self: center;
-        
+        align-self: center;   
     }
     &__searchBar{
-        padding: 0 .25rem;
+        padding: 0 0 0 1.25rem;
         align-self: center;
     }
-    &__links{
+    &__containerL{
+        padding: 0 1rem;
+        margin: 0;
+        flex-shrink: 3;
+    }
+    &__links{ 
         justify-content: space-between;
         padding: 0 2rem;
+        
     }
     &__buttons{
         padding-left: 5%;
-        padding: 5px 10px;
+        padding: .5rem .75rem;
         margin: 5px;
         justify-content: space-between; 
         border:none;color: inherit; background:none;
@@ -36,7 +43,7 @@
     &__cartIcon{
         width:100%;
         align-self: center;
-        height: 26px;
+        height: 1.625rem;
     }
  
   
@@ -47,6 +54,14 @@
     height: 2rem;
 
 }
+
+.hiddenNav{
+    display: none;
+    &__container{
+        display: none;
+    }
+}
+
 
 
 
