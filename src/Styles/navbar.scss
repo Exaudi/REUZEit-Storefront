@@ -55,12 +55,18 @@
 
 }
 
-.hiddenNav{
-    display: none;
-    &__container{
-        display: none;
-    }
-}
+// .hiddenNav{
+//     display: none;
+//     @include tablet{
+//         display: contents;
+//     }
+//     &__container{
+//         display: none;
+//         @include tablet{
+//             display: contents;
+//         }
+//     }
+// }
 
 
 

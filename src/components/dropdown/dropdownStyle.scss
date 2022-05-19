@@ -1,0 +1,42 @@
+.dropdown-menu {
+    background: red;
+    width: 200px;
+    position: absolute;
+    top: 80px;
+    list-style: none;
+    text-align: start;
+  }
+  
+  .dropdown-menu li {
+    background: #1888ff;
+    cursor: pointer;
+  }
+  
+  .dropdown-menu li:hover {
+    background: #5cabff;
+  }
+  
+  .dropdown-menu.clicked {
+    display: none;
+  }
+  
+ .dropdown{
+   display: flex;
+   &__mNav{
+     justify-content:flex-end;
+     align-self: center;
+
+   }
+   &__icon{
+     height: 1.5rem;
+     padding:1rem;
+
+   }
+
+ }
+  
+  @media screen and (max-width: 1080px) {
+    .fa-caret-down {
+      display: none;
+    }
+  }

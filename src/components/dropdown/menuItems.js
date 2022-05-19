@@ -26,13 +26,5 @@ export const MenuItems = [
     {
         title: 'CART',
         cName: 'dropdownLink'
-    },
-    {
-        title: 'LOGIN/REGISTRATION',
-        cName: 'dropdownLink'
-    },
-
-
-
-
+    }
 ]
