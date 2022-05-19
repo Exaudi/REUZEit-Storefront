@@ -13,7 +13,7 @@ function Dropdown() {
             <nav className="dropdown__mNav">
                 <img src={HamLogo} className="dropdown__icon" alt="hamburger menu"
                 onClick={()=> setOpen(!open)}/>
-                <ul className={open ? 'dropdown-menu clicked' : 'dropdown-menu'}>
+                <ul className={!open ? 'dropdown-menu clicked' : 'dropdown-menu'}>
                     {MenuItems.map((item, index) => {
                         return(
                             <li key={index}>

@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 //import '../../Styles/shop.scss';
-import '../../Styles/showMore.scss'
+import '../../Styles/showMore.scss';
+import {HiChevronDoubleDown} from 'react-icons/hi';
    
 
 const LoadMore = () => {
@@ -39,7 +40,10 @@ const LoadMore = () => {
         <div className='showMore'>
             <div className='showMore__container'>
                 <div className="showMore__heading">
-                    <button onClick={showMoreItems}><h5>Show More</h5></button>
+                    <button onClick={showMoreItems} className="showMore__button"><h5>Show More</h5></button>
+                </div>
+                <div className="showMore__arrows">
+                    <HiChevronDoubleDown />
                 </div>    
             </div>
         </div>    

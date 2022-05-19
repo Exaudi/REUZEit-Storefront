@@ -3,9 +3,8 @@
 .body{
     align-self: center;
     margin:0;
+    
 }
-
-
 .card2{
    
     &__container{ 
@@ -45,8 +44,24 @@
         &--item2{
             display: none;
         }
-    }  
+    }   
 }
+.showMore{
+    &__container{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+    &__button{
+        border: none;
+        color: inherit;
+        background: none;
+    }
+    &__arrows{
+        color:#A99BD4;
+    }
+}
+
 
 .p{
     margin: 0%;

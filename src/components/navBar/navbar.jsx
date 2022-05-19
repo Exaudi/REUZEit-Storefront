@@ -1,39 +1,12 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Dropdown from '../dropdown/dropDownMenu';
 import "../../Styles/navbar.scss";
 import logo from '../..//Assets/Logos/REUZEit Marketing Branding Logos and Icons for use/REUZEit No Tagline ® Official High res.png';
 import cartIcon from '../../Assets/icons/cart.png';
 import {Link} from 'react-router-dom'
-import hamMenu from '../../Assets/icons/icons8-menu-50.png'
-
-//import {Link} from "react-router-dom";
 
     const NavBar = () =>{
-        // const [click, setClick] = useState(false);
-        // const [dropdown, setDropdown] = useState(false);
-
-        // const handleClick = () => setClick(!click);
-        // const closeMobileMenu = () => setClick(false);
-
-        // const onMouseEnter = () =>{
-        //     if (window.innerWidth < 1080){
-        //         setDropdown(false);
-        //     } else{
-        //         setDropdown(true);
-        //     }
-        // };
-
-        // const onMouseLeave = () =>{
-        //     if (window.innerWidth < 1080){
-        //         setDropdown(true);
-        //     } else{
-        //         setDropdown(false);
-        //     }
-        // };
-
-
         return (
-           
                 <nav className='nav'>
                     <div className='nav__containerR'>
                         <div className='nav__logo'>
@@ -57,15 +30,10 @@ import hamMenu from '../../Assets/icons/icons8-menu-50.png'
                     </div>
                     </div>
                     <div className='hiddenNav'>
-                    <div className="hiddenNav__container">
-                      
-                                <button><Dropdown/></button>
-
-                    </div>
-                </div>
-                   
-                
-                    
+                        <button className='hiddenNav__dropdown'>
+                            <Dropdown/>
+                        </button>
+                    </div> 
                 </nav>
             
         );

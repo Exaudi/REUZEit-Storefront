@@ -26,6 +26,13 @@
         padding: 0 1rem;
         margin: 0;
         flex-shrink: 3;
+        @include tablet{
+            display: none;
+
+        }
+        @include mobile{
+            display: none;
+        }
     }
     &__links{ 
         justify-content: space-between;
@@ -45,9 +52,22 @@
         align-self: center;
         height: 1.625rem;
     }
- 
+    .hiddenNav{
+        display: none;
+        @include tablet{
+            display:flex;
+           justify-content: flex-start;
+           position:relative;
+           right:5%;
+        }
+        @include mobile{
+            display: contents;
+        }
+       
+    }
   
 }
+
 
 .hero{
     width:100%;
@@ -55,18 +75,7 @@
 
 }
 
-// .hiddenNav{
-//     display: none;
-//     @include tablet{
-//         display: contents;
-//     }
-//     &__container{
-//         display: none;
-//         @include tablet{
-//             display: contents;
-//         }
-//     }
-// }
+
 
 
 
