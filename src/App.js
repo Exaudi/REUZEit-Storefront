@@ -8,6 +8,7 @@ function app() {
     return (
     <div>
       <Nav />
+      <h1>hell</h1>
     </div>  
     
     );
