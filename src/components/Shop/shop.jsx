@@ -2,7 +2,9 @@
 import React, {useState, useEffect} from "react";
 import Nav from '../navBar/navbar'
 import LoadMore from "./loadMore";
+//import PS from '../product selection/ProductSelection';
 import '../../Styles/shop.scss'
+import { Link } from "react-router-dom";
 
 export default function shop(){
 
@@ -39,9 +41,7 @@ export default function shop(){
             <h2 className='shop__title2'>All Catergories</h2>
             <div className='showMore'>
                 <LoadMore />
-            
-      
-
+                <Link to='/slection'><button>Next page</button></Link>
             </div>
             
             </div>

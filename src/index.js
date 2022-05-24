@@ -5,6 +5,7 @@ import { BrowserRouter, Routes,Route } from 'react-router-dom';
 import App from './App.js';
 import Shop from './components/Shop/shop.jsx';
 import Cart from './components/cart'
+import ProductPage from './Pages/product selection/ProductSelection';
 //import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
 
@@ -17,6 +18,7 @@ root.render(
         <Route path="/" element={<App />} />
         <Route path="Shop" element={<Shop />} />
         <Route path="cart" element={<Cart />} />
+        <Route path="slection" element={<ProductPage/>} />
     </Routes>
   </BrowserRouter>   
     

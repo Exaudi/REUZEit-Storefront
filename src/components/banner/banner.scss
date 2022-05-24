@@ -1,0 +1,16 @@
+.banner{
+   display: flex;
+    &__container{
+        justify-content: center;
+        height: 12rem;
+        width: 50%; 
+        //margin: 10% 0 10% 10%;
+    }
+}
+
+.img{
+    height: 100%;
+    width: 100%;
+}
+
+
